@@ -1,0 +1,89 @@
+.moviesList {
+  width: 50rem;
+  max-width: 90%;
+  margin: 0;
+  margin-bottom: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 5px 2px #4d04146b;
+}
+
+.moviesList li:last-of-type {
+  border-bottom: none;
+}
+
+.watchNextContainer {
+  max-width: 90%;
+}
+
+.watchNextTitle {
+  text-align: center;
+  margin-top: 0;
+}
+
+.buttonsContainer {
+  width: 50rem;
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.buttonsContainer label {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.toggleContainer,
+.randomContainer {
+  margin: 0;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.randomContainer label {
+  text-align: right;
+}
+
+.randomButton {
+  font-size: 1rem;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-left: 5px;
+  border: 3px solid #248bcc;
+  color: #248bcc;
+}
+
+.randomButton:hover,
+.randomButton:active {
+  background-color: #248bcc;
+  color: white;
+}
+
+.info {
+  text-align: center;
+}
+
+@media (min-width: 769px) {
+  .buttonsContainer label {
+    font-size: 1.5rem;
+  }
+  .randomButton {
+    width: 40px;
+    height: 40px;
+  }
+}

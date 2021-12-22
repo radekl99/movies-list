@@ -1,0 +1,203 @@
+.header {
+  background-color: #cd113b;
+  width: 100vw;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5vw;
+
+  /* box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.7); */
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 3px -3px 0 #8d0c28;
+  margin: 0;
+}
+
+.header h1:hover {
+  cursor: pointer;
+}
+
+.loginButton {
+  font-family: Montserrat;
+  color: white;
+  font-size: 1.1rem;
+  padding: 5px 20px;
+  border: 0.1em solid white;
+  border-radius: 10px;
+  margin: 0;
+  background-color: transparent;
+}
+
+.loginButton:hover,
+.loginButton:active {
+  background-color: white;
+  color: #cd113b;
+  cursor: pointer;
+}
+
+.navigationLinks {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+  list-style: none;
+  display: none;
+}
+
+.showNavigationLinks {
+  display: block;
+}
+
+.navigationLinks li {
+  width: 100%;
+  padding: 0;
+  border-bottom: 3px solid #cd113b;
+  display: flex;
+  justify-content: center;
+}
+
+.navigationLinks li:last-of-type {
+  border-bottom: none;
+}
+
+.navigationLinks li p {
+  font-size: 1.1rem;
+}
+
+.logoutButton {
+  font-family: Montserrat;
+  color: #cd113b;
+  font-size: 1.1rem;
+  padding: 5px 20px;
+  border: 0.1em solid #cd113b;
+  border-radius: 10px;
+  margin-top: 20px;
+  background-color: transparent;
+}
+
+.logoutButton:hover,
+.logoutButton:active {
+  cursor: pointer;
+  background-color: #cd113b;
+  color: white;
+}
+
+.link {
+  color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.link:hover,
+.link:active {
+  color: white;
+  background-color: #cd113a88;
+}
+
+.showLinksButton {
+  color: white;
+  font-size: 1.3rem;
+  padding: 5px 20px;
+  border: 0.1em solid white;
+  border-radius: 10px;
+  margin: 0;
+  background-color: transparent;
+}
+
+.showLinksButton:hover,
+.showLinksButton:active {
+  cursor: pointer;
+  background-color: #be1036;
+}
+
+.active {
+  color: white;
+  background-color: #cd113ae7;
+}
+
+@media (min-width: 769px) {
+  .header {
+    padding: 0 10vw;
+  }
+
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .navigationLinks {
+    background-color: transparent;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    width: fit-content;
+    height: 100%;
+
+    transform: translateX(0%);
+  }
+
+  .navigationLinks li {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .link {
+    color: rgba(247, 247, 247, 0.795);
+    font-size: 1.25rem;
+  }
+
+  .link:hover,
+  .link:active {
+    color: white;
+  }
+
+  .logoutButton {
+    color: white;
+    border-color: white;
+    margin: 0;
+  }
+
+  .logoutButton:hover,
+  .logoutButton:active {
+    cursor: pointer;
+    background-color: white;
+    color: #cd113b;
+  }
+
+  .showLinksButton {
+    display: none;
+  }
+
+  .active {
+    color: white;
+    background-color: none;
+  }
+}

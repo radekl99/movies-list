@@ -1,0 +1,29 @@
+.searchList {
+  width: 60rem;
+  max-width: 90%;
+  margin: 40px 0 20px 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 5px 2px #4d04146b;
+}
+
+.searchList li:last-of-type {
+  border-bottom: none;
+}
+
+.toggleContainer {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.toggleContainer label {
+  font-size: 1.25rem;
+}

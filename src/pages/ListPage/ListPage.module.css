@@ -1,0 +1,41 @@
+.listPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.title span {
+  color: white;
+  z-index: 1;
+  position: relative;
+  padding: 0 1rem;
+}
+
+.title span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, #cd113b, #8d0c28);
+  z-index: -1;
+  transform: skewX(-15deg);
+}
+
+.link {
+  color: #8d0c28;
+  text-align: center;
+}
+.link:hover {
+  color: #cd113b;
+}
+
+.info {
+  text-align: center;
+}
