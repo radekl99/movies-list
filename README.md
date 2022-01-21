@@ -17,6 +17,8 @@ This is my first React practice project. It is app for searching movies, adding 
 
 - Live Site URL: https://movieslist-ee4b0.web.app/
 
+## My process
+
 ### Built with
 
 - Semantic HTML5 markup
