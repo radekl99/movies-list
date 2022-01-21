@@ -15,7 +15,7 @@ This is my first React practice project. It is app for searching movies, adding 
 
 ### Links
 
-- Live Site URL: https://movieslist-ee4b0.web.app/search-movie
+- Live Site URL: https://movieslist-ee4b0.web.app/
 
 ### Built with
 
